@@ -32,12 +32,15 @@ console.log(calcGrossPrice(40, 0.16));
 
 function addPositive(a, b) {
   if (a < 0) {
-    return a * -1 + b * -1;
-  } else if (b < 0) {
-    return a + b * -1;
+    a = a * -1;
+  }
+  if (b < 0) {
+    b = b * -1;
   }
   return a + b;
 }
+
+console.log(addPositive(-3, 3));
 
 console.log(addPositive(2, 3));
 // result1 should be 5
