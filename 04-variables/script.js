@@ -15,10 +15,11 @@ console.log(getUserNameLength(userName) > 4);
 TODO: Implement the isString function */
 
 const isString = function (insertAnything) {
-  if (typeof insertAnything === "string") {
+  return typeof insertAnything === "string";
+  /*   if (typeof insertAnything === "string") {
     return true;
   }
-  return false;
+  return false; */
 };
 
 console.log(isString("Hello"));
