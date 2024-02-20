@@ -28,17 +28,18 @@ function charCount(word, letter) {
   let foundAmount = 0;
 
   for (let index = 0; index <= word.length; index++) {
-    if (word[index] === `${letter}`) {
-      foundAmount += 1;
+    if (word.charAt(index) === letter) {
+      foundAmount++;
     }
   }
-  return foundAmount;
+
+  return foundAmount.toString();
 }
 
 console.log(charCount("hello", "l"));
 // result should be: 2
 
-console.log(charCount("mama", "ma"));
+console.log(charCount("mama", "m"));
 // result should be: 2
 
 console.log(charCount("Resümee", "e"));
